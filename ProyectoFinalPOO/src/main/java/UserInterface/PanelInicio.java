@@ -26,17 +26,14 @@ public class PanelInicio extends JPanel implements ActionListener {
 
     private void componentesIniciales() {
         this.setLayout(null);
-
         this.etiquetaLogin = new JLabel("USER: ");
         this.etiquetaLogin.setForeground(Color.YELLOW);
         this.etiquetaLogin.setBounds(70, 150, 150, 25);
         this.etiquetaPassword = new JLabel("PASSWORD: ");
         this.etiquetaPassword.setForeground(Color.YELLOW);
         this.etiquetaPassword.setBounds(70, 250, 150, 25);
-        //--------------------------------------------------
         this.textLogin.setBounds(70, 175, 200, 25);
         this.textPassword.setBounds(70, 275, 200, 25);
-        //--------------------------------------------------------
         this.login = new JButton("Login");
         this.login.setBounds(115, 350, 90, 25);
         this.login.addActionListener(this);
@@ -64,11 +61,9 @@ public class PanelInicio extends JPanel implements ActionListener {
                 cambioColor(Color.WHITE);
             }
         });
-
         this.setBackground(Color.WHITE);
         this.setBounds(0, 0, 300, 600);
         Dimension dimension = getToolkit().getScreenSize();
-
         this.fondoDerecha.setBounds(0, 0, dimension.width, dimension.height);
 
         this.fondoDerecha.add(this.etiquetaLogin);
@@ -115,7 +110,6 @@ public class PanelInicio extends JPanel implements ActionListener {
         }
     }
 
-
     public JTextField getTextLogin() {
         return textLogin;
     }
@@ -123,7 +117,6 @@ public class PanelInicio extends JPanel implements ActionListener {
     public JTextField getTextPassword() {
         return textPassword;
     }
-
     public PanelInicio() {
     }
 }
