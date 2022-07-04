@@ -3,7 +3,6 @@ import UserInterface.PanelInicio;
 
 import javax.swing.*;
 import java.sql.SQLException;
-//AUTOR ARMIN, TODOS LOS DERECHOS RESERVADOS :)
 public class Login {
     private String id_usuario;
      PanelInicio panelInicio;
@@ -27,7 +26,6 @@ public class Login {
             }
 
             if (usuario !=null && contrasenia!=null && usuario.equals(usuarioCorrecto)&&contrasenia.equals(passwordCorrecta)){
-                //this.id_usuario = conexion.resultado.getString(0);
                 return true;
             }
             else{
