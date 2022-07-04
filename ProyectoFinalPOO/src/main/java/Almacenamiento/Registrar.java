@@ -5,7 +5,6 @@ import UserInterface.PanelRegistro;
 
 import javax.swing.*;
 import java.sql.SQLException;
-//AUTOR ARMIN, TODOS LOS DERECHOS RESERVADOS
 public class Registrar {
     PanelRegistro panelRegistro;
 
